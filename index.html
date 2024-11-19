@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Minsung Chris Hong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Minsung Chris Hong</h1>
+    <h2>(MSE in Robotics)</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:minsung.hong0320@gmail.com">minsung.hong0320@gmail.com</a></p>
+      <p>Phone: <a href="tel:+16177974895">617-797-4895</a></p>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Project 1 -->
+    <div class="project-box">
+      <h3 class="project-title">Autonomous Semi-Truck Motion Control</h3>
+      <p class="project-description">
+        Developed ROS packages for a Lyapunov-based controller achieving
+        30cm trajectory tracking at 80mph, improved multi-object tracking
+        by 30%, and implemented a Frenet-based path planner, reducing travel
+        time by 15% while enhancing collision avoidance by 25%.
+      </p>
+      <div class="project-video">
+        <video controls width="100%">
+          <source src="videos/AutobonDrive1.mov" type="video/quicktime">
+        </video>
+        <p>If the video doesn't play, <a href="videos/AutobonDrive1.mov" download>download it here</a>.</p>
+        <video controls width="100%">
+          <source src="videos/AutobonDrive2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-box">
+      <h3 class="project-title">Autonomous Concrete Polishing Robot</h3>
+      <p class="project-description">
+        Created ROS modules for zig-zag path generation with obstacle
+        avoidance, using quintic polynomial trajectories. Developed a smooth
+        path planner reducing jerk while maintaining optimal performance.
+      </p>
+      <div class="project-video">
+        <video controls width="100%">
+          <source src="videos/TrueAutonomy.mov" type="video/quicktime">
+        </video>
+        <p>If the video doesn't play, <a href="videos/TrueAutonomy.mov" download>download it here</a>.</p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-box">
+      <h3 class="project-title">Portable Indoor 3D Mapping Device</h3>
+      <p class="project-description">
+        Invented a mapping device for indoor robots, reducing installation
+        time by 90%. Successfully managed development from concept to sales,
+        securing 300 unit orders within 2.5 years of R&D.
+      </p>
+      <div class="project-video">
+        <video controls width="100%">
+          <source src="videos/ZIMS_Integration.mp4" type="video/mp4">
+        </video>
+        <video controls width="100%">
+          <source src="videos/ZIMS_GUI.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-box">
+      <h3 class="project-title">Task-Driven Swarm Robotics</h3>
+      <p class="project-description">
+        Developed ROS-based software enabling swarms of robots to
+        collaboratively map and explore unknown areas, achieving efficient
+        coverage and task allocation.
+      </p>
+      <div class="project-video">
+        <video controls width="100%">
+          <source src="videos/SwarmDrive.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  
+
+  <!-- Go-to-Top Button -->
+  <button id="go-to-top" onclick="scrollToTop()">Top</button>
+  <script>
+    // Display Go-to-Top button when scrolled down
+    window.addEventListener('scroll', function() {
+      const topButton = document.getElementById('go-to-top');
+      if (window.scrollY > 200) {
+        topButton.style.display = 'block';
+      } else {
+        topButton.style.display = 'none';
+      }
+    });
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  </div>
+  
+  <footer>
+    <p>&copy; 2024 Minsung Chris Hong. All Rights Reserved. | <a href="#">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
