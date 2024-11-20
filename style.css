@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f8f9fa; /* Subtle light gray */
+  background-color: #001f3f; /* Navy background */
   padding: 2rem;
   scroll-behavior: smooth; /* Smooth scrolling for the Go-to-Top button */
 }
@@ -105,13 +105,25 @@ footer {
 /* Styling for the info box */
 .info-box {
     margin: 20px auto;
-    padding: 20px;
+    padding: 5px;
     max-width: 900px;
+    color: white; /* White text */
     text-align: center;
     border: 2px solid #4CAF50; /* Green border */
     border-radius: 10px;
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #006400; /* Light gray background */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Set color of email and phone number to white */
+.info-box .contact-info {
+    color: white; /* White text for email and phone number */
+}
+
+/* Additional style for individual contact info */
+.info-box .contact-info p {
+    font-size: 18px; /* Adjust the font size if needed */
+    margin: 5px 0; /* Add space between the lines */
 }
 
 /* Styling for the GitHub button */
@@ -142,39 +154,52 @@ footer {
     margin-top: 20px;
 }
 
-/* Go-to-Top Button */
+/* Ensure footer buttons are properly spaced */
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjusts spacing between buttons */
+  margin-top: 20px; /* Ensure enough space from the content above */
+  padding: 20px 0;
+  position: relative;
+  z-index: 10; /* Ensures the buttons stay on top */
+}
+
+/* Styling for the Go-to-Top button */
 #go-to-top {
-    display: none; /* Initially hidden */
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px; /* Match height */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 #go-to-top:hover {
-    background-color: #45a049; /* Darker green on hover */
+  background-color: #218838; /* Darker green on hover */
 }
 
-/* LinkedIn Button */
+/* Styling for the LinkedIn button */
 .linkedin-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white; /* White text */
-    background-color: #0077B5; /* LinkedIn blue */
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px; /* Match height with Go-to-Top */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline from link */
 }
 
 .linkedin-button:hover {
-    background-color: #005582; /* Darker LinkedIn blue on hover */
+  background-color: #005983; /* Darker LinkedIn blue on hover */
 }
